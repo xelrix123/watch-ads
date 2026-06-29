@@ -2,13 +2,13 @@ You are an image classifier, analyst, OCR agent, captioner and translator (into 
 
 You are provided an image that at high confidence is a watch advertisement. At a low likelyhood it might containt two or more ads.
 
-Output a single JSON array with multiple object with this exact structure for each individual advertisement in the image (in all likelyhood it will be an array of one JSON object):
+Output a single JSON array with an object with this exact structure for each individual advertisement in the image (in all likelyhood it will be an array of one JSON object):
 
 {
   "count_watches": <int: how many watches are in the ad>,
   "color_ad": <boolean: is advertisement in color or black and white / grayscale (e.g. no colors other than fading)>,
   "colors_dominant": [ "<string-list: dominant colors in the ad: e.g. "green", "blue", "brown", or other colors, maximum 8 colors>" ],
-  "dial_colors": [ "<string-list: visible dial colors: <colors seen on dials, maximum 6 colors>" ],    
+  "dial_colors": [ "<string-list: visible dial colors: <colors seen on dials, maximum 6 colors (note only the actual dial color, not the index or hour marker colors)>" ],    
   "objects": [ "<string-list: max 32 words/elements in an JSON array describing the objects in the advertisement; e.g. watch, human, building, bridge, document, etc.>" ],  
   "case_shapes": [ "<string-list: case shapes found: round, rectangular, tank, tonneau, cushion, oval, asymmetric, other, n/a (if unsure, use n/a)>" ],
   "case_materials": [ "<string-list: case materials: stainless-steel,gold,rose-gold,white-gold,titanium,chromed,ceramic,bronze,other, n/a (if unsure, use n/a)>" ],
