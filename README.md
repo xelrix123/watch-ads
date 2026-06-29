@@ -40,7 +40,7 @@ $ python3 ./10_llamacpp_ocr_runner.py --input-dir test-images/ --force-reanalysi
 [STATS] Total time: 220.42s | Attempted: 4 | Successful: 4 | Skipped: 0 | Avg per attempted: 55.10s
 
 # run /w '--remove-invalid-sidecars' if sus > 0
-$ ./11_sanity_check.py --input-dir test-images/
+$ python3 ./11_sanity_check.py --input-dir test-images/
 Checked 4 sidecar(s). Suspicious: 0
 ...
 
