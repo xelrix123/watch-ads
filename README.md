@@ -10,7 +10,7 @@ Clone this repository. Download pre-built or compile, and install latest [llama.
 
 NOTE: On OSX, to force reset quarantine bit on llama.cpp 'xattr -dr com.apple.quarantine . or run ./00_clear_quarantine_llamacpp.sh.
 
-Then init python venc and download models from HuggingFace. Qwen is required. Gemma is optional but recommeded. Models will take ~72GB of disk space in aggregate.
+Then init python venv and download models from HuggingFace. Qwen is required. Gemma is optional but recommeded. Models will take ~72GB of disk space in aggregate. Running the models will require at least 36GB of VRAM.
 
 ```
 $ ./05_install_python_deps.sh
