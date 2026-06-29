@@ -57,7 +57,7 @@ Wrote stats.html (80,463 bytes)
 $ python3 21_bundle_assets.py --overwrite --input-dir ./tb/ --metadata ./metadata.json.gz
 ```
 
-## 
+## Serve the output
 
 Because of the CORS restrictions, the `file://...` url cannot be used to view index.html. Instead, serve via web server. Python3 build-in server example provided below.
 
@@ -67,3 +67,8 @@ Point the browser to local python web server at http://localhost:8000
 $ python3 -m http.server --bind 127.0.0.1
 Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ```
+
+### Using GitHub Pages
+
+See `./docs/` for how to deploy generated assets to GitHub pages. Generated HTML is viewable at [https://xelrix123.github.io/watch-ads/](https://xelrix123.github.io/watch-ads/).
+
