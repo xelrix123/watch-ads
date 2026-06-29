@@ -1,6 +1,6 @@
 # Watch ads OCR and Search
 
-Free text OCR, translation to english and search for watch advertisements build on Vision Models.
+OCR, translation to english and text search for watch advertisements build on Vision Models.
 
 Vibe coded. Mostly. There's no tests either. This is the new way.
 
