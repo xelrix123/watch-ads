@@ -1,5 +1,6 @@
 # Watch ads OCR and Search
-Free text search for watch advertisements build on Vision Models.
+
+Free text OCR, translation to english and search for watch advertisements build on Vision Models.
 
 Vibe coded. Mostly. There's no tests either. This is the new way.
 
@@ -60,6 +61,9 @@ $ python3 21_bundle_assets.py --overwrite --input-dir ./tb/ --metadata ./metadat
 
 Because of the CORS restrictions, the `file://...` url cannot be used to view index.html. Instead, serve via web server. Python3 build-in server example provided below.
 
+Point the browser to local python web server at http://localhost:8000
+
 ```
-...
+$ python3 -m http.server --bind 127.0.0.1
+Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ```
